@@ -24,7 +24,6 @@ export default class HomeScreen extends React.Component {
     super();
     this.state = {
       
-      device_IMEI: Constants.deviceId,
       dataFull: [],
       data: [],
 

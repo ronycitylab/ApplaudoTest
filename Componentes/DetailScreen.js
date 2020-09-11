@@ -23,7 +23,7 @@ export default class DetailScreen extends React.Component {
     super(props);
     this.state = {
 
-      device_IMEI: Constants.deviceId,
+
 
     };
 
@@ -79,8 +79,7 @@ export default class DetailScreen extends React.Component {
 
     const supported = await Linking.canOpenURL(this.state.uriTrailer);
     if (supported) {
-      // Opening the link with some app, if the URL scheme is "http" the web link should be opened
-      // by some browser in the mobile
+      
       await Linking.openURL(this.state.uriTrailer);
 
     } else {
